@@ -31,8 +31,8 @@ export default function SignUpScreen() {
             </TouchableOpacity>
         </View>
         <View className="flex-row justify-center">
-            <Image source={require('../assets/images/signupimg.png')} 
-                style={{width: 325, height: 110}} />
+            <Image source={require('../assets/images/DUCKSYS.png')} 
+                style={{width: 300, height: 110}} />
         </View>
       </SafeAreaView>
       <View className="flex-1 bg-white px-8 pt-8"

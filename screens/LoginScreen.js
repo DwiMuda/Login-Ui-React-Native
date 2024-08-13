@@ -17,8 +17,8 @@ export default function LoginScreen() {
           </TouchableOpacity>
         </View>
         <View  className="flex-row justify-center">
-          <Image source={require('../assets/images/loginimg.png')} 
-          style={{width: 220, height: 200}} />
+          <Image source={require('../assets/images/DUCKSYS.png')} 
+          style={{width: 300, height: 200}} />
         </View>
         
         
@@ -57,10 +57,10 @@ export default function LoginScreen() {
           </View>
           <View className="flex-row justify-center mt-7">
               <Text className="text-gray-500 font-semibold">
-              Tidak punya akun?
+              
               </Text>
               <TouchableOpacity onPress={()=> navigation.navigate('SignUp')}>
-                  <Text className="font-semibold text-blue-500"> Mendaftar</Text>
+                  <Text className="font-semibold text-blue-500"></Text>
               </TouchableOpacity>
           </View>
           

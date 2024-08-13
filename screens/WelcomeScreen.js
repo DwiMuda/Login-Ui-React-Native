@@ -16,17 +16,17 @@ export default function WelcomeScreen() {
             </View>
             <View className="space-y-4">
                 <TouchableOpacity
-                    onPress={()=> navigation.navigate('SignUp')}
+                    onPress={()=> navigation.navigate('Login')}
                     className="py-3 bg-blue-900 mx-7 rounded-xl">
                         <Text 
                             className="text-xl font-bold text-center text-white" >
-                            Mendaftar
+                            Masuk
                         </Text>
                 </TouchableOpacity>
                 <View className="flex-row justify-center">
-                    <Text className="text-white font-semibold">Sudah punya akun?</Text>
-                    <TouchableOpacity onPress={()=> navigation.navigate('Login')}>
-                        <Text className="font-semibold text-black-500"> Masuk</Text>
+                    <Text className="text-white font-semibold"></Text>
+                    <TouchableOpacity onPress={()=> navigation.navigate('SignUp')}>
+                        <Text className="font-semibold text-black-500"></Text>
                     </TouchableOpacity>
                 </View>
             </View>
