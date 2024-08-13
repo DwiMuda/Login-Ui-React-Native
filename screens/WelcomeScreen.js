@@ -9,13 +9,10 @@ export default function WelcomeScreen() {
   return (
     <SafeAreaView className="flex-1" style={{backgroundColor: themeColors.bg}}>
         <View className="flex-1 flex justify-around my-4">
-            <Text 
-                className="text-white font-bold text-4xl text-center">
-                Let's Get Started!
-            </Text>
+           
             <View className="flex-row justify-center">
-                <Image source={require("../assets/images/wl.png")}
-                    style={{width: 350, height: 350}} />
+                <Image source={require("../assets/images/cakra2.png")}
+                    style={{width: 350, height: 300}} />
             </View>
             <View className="space-y-4">
                 <TouchableOpacity
@@ -23,13 +20,13 @@ export default function WelcomeScreen() {
                     className="py-3 bg-blue-900 mx-7 rounded-xl">
                         <Text 
                             className="text-xl font-bold text-center text-white" >
-                            Sign Up
+                            Mendaftar
                         </Text>
                 </TouchableOpacity>
                 <View className="flex-row justify-center">
-                    <Text className="text-white font-semibold">Already have an account?</Text>
+                    <Text className="text-white font-semibold">Sudah punya akun?</Text>
                     <TouchableOpacity onPress={()=> navigation.navigate('Login')}>
-                        <Text className="font-semibold text-black-500"> Log In</Text>
+                        <Text className="font-semibold text-black-500"> Masuk</Text>
                     </TouchableOpacity>
                 </View>
             </View>

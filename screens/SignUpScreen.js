@@ -38,50 +38,42 @@ export default function SignUpScreen() {
       <View className="flex-1 bg-white px-8 pt-8"
         style={{borderTopLeftRadius: 50, borderTopRightRadius: 50}} >
         <View className="form space-y-2">
-            <Text className="text-gray-700 ml-4">Full Name</Text>
+            <Text className="text-gray-700 ml-4">Nama Lengkap</Text>
             <TextInput
                 className="p-4 bg-gray-100 text-gray-700 rounded-2xl mb-3"
                 value={email}
                 onChangeText={value => setEmail(value)}
-                placeholder='Enter Name'
+                placeholder='Masukan Nama'
             />
-            <Text className="text-gray-700 ml-4">Email Address</Text>
+            <Text className="text-gray-700 ml-4">Alamat Email</Text>
             <TextInput
                 className="p-4 bg-gray-100 text-gray-700 rounded-2xl mb-3"
                 value={password}
                 onChangeText={value => setPassword(value)}
-                placeholder='Enter Email'
+                placeholder='Masukan Email'
             />
             <Text className="text-gray-700 ml-4">Password</Text>
             <TextInput
                 className="p-4 bg-gray-100 text-gray-700 rounded-2xl mb-7"
                 secureTextEntry
                 // value=""
-                placeholder='Enter Password'
+                placeholder='Masukan Password'
             />
             <TouchableOpacity
                 className="py-3 bg-blue-500 rounded-xl"
                 onPress = {handleSubmit}
             >
                 <Text className="font-xl font-bold text-center text-white">
-                    Sign Up
+                    Mendaftar
                 </Text>
             </TouchableOpacity>
         </View>
-        <Text className="text-xl text-gray-700 font-bold text-center py-5">
-            Or
-        </Text>
-        <View className="flex-row justify-center space-x-12">
-            <TouchableOpacity className="p-2 bg-gray-100 rounded-2xl">
-                <Image source={require('../assets/icons/google.png')} 
-                    className="w-10 h-10" />
-            </TouchableOpacity>
-           
-        </View>
+        
+        
         <View className="flex-row justify-center mt-7">
-            <Text className="text-gray-500 font-semibold">Already have an account?</Text>
+            <Text className="text-gray-500 font-semibold">Sudah punya akun?</Text>
             <TouchableOpacity onPress={()=> navigation.navigate('Login')}>
-                <Text className="font-semibold text-blue-500"> Login</Text>
+                <Text className="font-semibold text-blue-500"> Masuk</Text>
             </TouchableOpacity>
         </View>
       </View>
